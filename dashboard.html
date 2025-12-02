@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <title>Student Dashboard - CUI Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP NAVIGATION -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <img src="Assets/CUI_Logo.png" class="nav-logo">
+      <span class="nav-title">COMSATS Student Portal</span>
+    </div>
+
+    <div class="nav-right">
+      <a href="dashboard.html" class="nav-item active">Dashboard</a>
+      <a href="fees.html" class="nav-item">Fees</a>
+      <a href="profile.html" class="nav-item">Profile</a>
+      <a href="result-card.html" class="nav-item">Result Card</a>
+      <a href="index.html" class="nav-item logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- MAIN GRID -->
+  <div class="dashboard-container">
+
+    <!-- PROFILE CARD -->
+    <div class="profile-card">
+      <img src="Assets/Profile.JPG" class="profile-img">
+
+      <h2 class="student-name">Moiz Ahmad</h2>
+      <p class="student-id">FA25-BCS-061</p>
+
+      <div class="details">
+        <p><strong>Department:</strong> Computer Science</p>
+        <p><strong>Program:</strong> BSCS</p>
+        <p><strong>Semester:</strong> 1st</p>
+      </div>
+    </div>
+
+    <!-- COURSES SECTION -->
+    <div class="courses-section">
+      <h2 class="section-title">Enrolled Courses</h2>
+
+      <div class="courses-grid">
+
+        <div class="course-card" onclick="openCourse('CS201')">
+          <h3 class="course-code">CS201</h3>
+          <p class="course-name">Data Structures</p>
+          <p class="course-teacher">Teacher: Dr. Ali</p>
+          <p class="course-meta">3 Credits | Attendance: 92%</p>
+        </div>
+
+        <div class="course-card" onclick="openCourse('CSC103')">
+          <h3 class="course-code">CSC103</h3>
+          <p class="course-name">Programming Fundamentals</p>
+          <p class="course-teacher">Teacher: Ms. Gulmina Rextina</p>
+          <p class="course-meta">4 Credits | Attendance: 88%</p>
+        </div>
+
+        <div class="course-card" onclick="openCourse('MTH205')">
+          <h3 class="course-code">MTH205</h3>
+          <p class="course-name">Discrete Mathematics</p>
+          <p class="course-teacher">Teacher: Sir Ahmad</p>
+          <p class="course-meta">3 Credits | Attendance: 96%</p>
+        </div>
+
+        <div class="course-card" onclick="openCourse('HUM104')">
+          <h3 class="course-code">HUM104</h3>
+          <p class="course-name">Functional English</p>
+          <p class="course-teacher">Teacher: Ms. Misbah Atta</p>
+          <p class="course-meta">3 Credits | Attendance: 90%</p>
+        </div>
+
+        <div class="course-card" onclick="openCourse('CSC101')">
+          <h3 class="course-code">CSC101</h3>
+          <p class="course-name">Information Technology</p>
+          <p class="course-teacher">Teacher: Ms Sana Nasir</p>
+          <p class="course-meta">3 Credits | Attendance: 85%</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
