@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Fees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP NAVIGATION -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <img src="Assets/CUI_Logo.png" class="nav-logo">
+      <span class="nav-title">COMSATS Student Portal</span>
+    </div>
+
+    <div class="nav-right">
+      <a href="dashboard.html" class="nav-item">Dashboard</a>
+      <a href="fees.html" class="nav-item active">Fees</a>
+      <a href="profile.html" class="nav-item">Profile</a>
+      <a href="result-card.html" class="nav-item">Result Card</a>
+      <a href="index.html" class="nav-item logout">Logout</a>
+    </div>
+  </nav>
+
+    <!-- Main -->
+    <div class="main">
+        <!-- Content -->
+        <div class="fees-wrapper">
+
+            <h3 class="fees-heading">Paid & Remaining Dues</h3>
+
+            <table class="fees-table">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount (PKR)</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Challan</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Tuition Fee - Spring 2026</td>
+                        <td>139,000</td>
+                        <td>10 Jan 2026</td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td><button class="btn-challan">Download</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Library Fine</td>
+                        <td>500</td>
+                        <td>5 Dec 2025</td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td><button class="btn-challan">Download</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Transport Fee</td>
+                        <td>8000</td>
+                        <td>10 Nov 2025</td>
+                        <td><span class="status paid">Paid</span></td>
+                        <td><button class="btn-challan">Download</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
