@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <title>Comsats Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Logo">
+    <img src="Assets/CUI_Logo.png" alt="CUI Logo" />
+    <h1>COMSATS University<br> Islamabad</h1>
+  </div>
+  <div class="login-page">
+    <!-- Login Form -->
+    <div class="login-form">
+      <div class="form-wrap">
+        <h1>CUI Student Portal</h1>
+        <form id="login-form" action="dashboard.html">
+          <div class="input-row">
+            <label for="username">Username</label>
+            <input id="username" type="text" required>
+          </div>
+          <div class="input-row">
+            <label for="password">Password</label>
+            <input id="password" type="password" required>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn-primary" >Login</button>
+            <a href="#" class="link-muted">Forgot password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Events & Noticeboard -->
+    <aside class="events-section">
+      <h2>HIGHLIGHTS</h2>
+
+      <div class="event-card" data-images="concert1.PNG,concert2.PNG,concert3.PNG,concert4.PNG,concert5.PNG,concert6.PNG">
+        <div class="event-header">
+          <span class="event-title"> HAVII Concert: Nov 28</span>
+          <span class="event-meta">EE Lawn</span>
+        </div>
+        <div class="slideshow"></div>
+      </div>
+
+      <div class="event-card" data-images="EVE1.PNG,EVE2.PNG">
+        <div class="event-header">
+          <span class="event-title"> Fresher's Eve</span>
+          <span class="event-meta">CS Lawn</span>
+        </div>
+        <div class="slideshow"></div>
+      </div>
+
+      <h2>UPCOMING EVENTS</h2>
+
+      <div class="event-card" data-images="lecture.jpg">
+        <div class="event-header">
+          <span class="event-title"> Guest Lecture: Dec 15</span>
+          <span class="event-meta">Seminar Hall</span>
+        </div>
+        <div class="slideshow"></div>
+      </div>
+
+      <div class="event-card" data-images="ctf1.PNG">
+        <div class="event-header">
+          <span class="event-title"> Capture The Flag: Jan 5</span>
+          <span class="event-meta">CS Block</span>
+        </div>
+        <div class="slideshow"></div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
