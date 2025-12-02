@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <title>Course | Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- TOP NAVIGATION -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <img src="Assets/CUI_Logo.png" class="nav-logo">
+      <span class="nav-title">COMSATS Student Portal</span>
+    </div>
+
+    <div class="nav-right">
+      <a href="dashboard.html" class="nav-item active">Dashboard</a>
+      <a href="fees.html" class="nav-item">Fees</a>
+      <a href="profile.html" class="nav-item">Profile</a>
+      <a href="result-card.html" class="nav-item">Result Card</a>
+      <a href="index.html" class="nav-item logout">Logout</a>
+    </div>
+  </nav>
+
+    <div class="course-page">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="course-menu">            
+            <button class="menu-btn active" data-target="notifications">Notifications</button>
+            <button class="menu-btn" data-target="attendance">Attendance</button>
+            <button class="menu-btn" data-target="marks">Marks</button>
+            <button class="menu-btn" data-target="quizzes">Quizzes</button>
+            <button class="menu-btn" data-target="assignments">Assignments</button>
+
+        </aside>
+
+        <!-- RIGHT CONTENT AREA -->
+        <main class="course-content">
+
+            <!-- Course Header -->
+            <div class="course-header">
+                <h2 id="courseName">Information Technology</h2>
+                <p><strong>Teacher:</strong> Ms. Sana Nasir</p>
+                <p><strong>Credits:</strong> 3</p>
+            </div>
+
+            <!-- Attendance Section -->
+            <section id="attendance" class="section">
+                <h3>Attendance Record</h3>
+                <table class="table">
+                    <tr><th>Date</th><th>Status</th></tr>
+                    <tr><td>Nov 20</td><td>Present</td></tr>
+                    <tr><td>Nov 23</td><td>Absent</td></tr>
+                    <tr><td>Nov 25</td><td>Present</td></tr>
+                </table>
+            </section>
+
+            <!-- Marks Section -->
+            <section id="marks" class="section">
+                <h3>Marks</h3>
+                <table class="table">
+                    <tr><th>Component</th><th>Marks</th></tr>
+                    <tr><td>Midterm</td><td>32 / 40</td></tr>
+                    <tr><td>Final</td><td>-</td></tr>
+                    <tr><td>Assignments</td><td>18 / 20</td></tr>
+                </table>
+            </section>
+
+            <!-- Quizzes Section -->
+            <section id="quizzes" class="section">
+                <h3>Quizzes</h3>
+                <table class="table">
+                    <tr><th>Quiz</th><th>Marks</th></tr>
+                    <tr><td>Quiz 1</td><td>9 / 10</td></tr>
+                    <tr><td>Quiz 2</td><td>7 / 10</td></tr>
+                </table>
+            </section>
+
+            <!-- Assignments Section -->
+            <section id="assignments" class="section">
+                <h3>Assignments</h3>
+                <ul>
+                    <li>Assignment 1 — Submitted</li>
+                    <li>Assignment 2 — Pending</li>
+                </ul>
+            </section>
+
+            <!-- Notifications Section -->
+            <section id="notifications" class="section active-section">
+                <h3>Course Announcements</h3>
+                <ul>
+                    <li>Quiz 2 on Monday</li>
+                    <li>Assignment 2 deadline extended</li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
