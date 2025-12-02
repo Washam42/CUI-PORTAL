@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title>Result Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP NAVIGATION -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <img src="Assets/CUI_Logo.png" class="nav-logo">
+      <span class="nav-title">COMSATS Student Portal</span>
+    </div>
+
+    <div class="nav-right">
+      <a href="dashboard.html" class="nav-item">Dashboard</a>
+      <a href="fees.html" class="nav-item">Fees</a>
+      <a href="profile.html" class="nav-item">Profile</a>
+      <a href="result-card.html" class="nav-item active">Result Card</a>
+      <a href="index.html" class="nav-item logout">Logout</a>
+    </div>
+  </nav>
+
+    <!-- Main section -->
+    <div class="main">
+
+        <div class="result-wrapper">
+
+            <!-- Student Info -->
+            <div class="result-info">
+                <h3>Student Information</h3>
+                <p><strong>Name:</strong> Moiz Ahmad</p>
+                <p><strong>Roll No:</strong> FA21-BCS-001</p>
+                <p><strong>Program:</strong> BS Computer Science</p>
+                <p><strong>Semester:</strong> Spring 2025</p>
+            </div>
+
+            <!-- Table -->
+            <h3 class="table-heading">Course Grades</h3>
+
+            <table class="result-table">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Credit Hours</th>
+                        <th>Obtained Marks</th>
+                        <th>GPA</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>CSC241</td>
+                        <td>Object Oriented Programming</td>
+                        <td>3</td>
+                        <td>85</td>
+                        <td>3.7</td>
+                    </tr>
+
+                    <tr>
+                        <td>MTH241</td>
+                        <td>Calculus II</td>
+                        <td>3</td>
+                        <td>78</td>
+                        <td>3.0</td>
+                    </tr>
+
+                    <tr>
+                        <td>ENG103</td>
+                        <td>Communication Skills</td>
+                        <td>3</td>
+                        <td>88</td>
+                        <td>3.8</td>
+                    </tr>
+
+                    <tr>
+                        <td>PHY122</td>
+                        <td>Applied Physics</td>
+                        <td>2</td>
+                        <td>91</td>
+                        <td>4.0</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSC101</td>
+                        <td>Intro to Computing</td>
+                        <td>3</td>
+                        <td>82</td>
+                        <td>3.4</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Print button -->
+            <button class="btn-print">Print Result Card</button>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
